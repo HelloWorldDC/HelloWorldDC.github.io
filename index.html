@@ -15,8 +15,20 @@
     <meta property="og:title" content="Hello World" />
     <meta property="fb:app_id" content="249038126685556" />
     <!-- Kết thúc giao thức Open Graph -->
-    <link rel="shortcut icon" type="image/jpg" href="logo.jpg"/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="logo.jpg" />
+    <!-- Kết thúc Favicon -->
     <title>Hello World</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-68QK48L1SD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-68QK48L1SD');
+    </script>
+    <!-- Kết thúc  Google Analytics-->
 </head>
 <style>
     * {
@@ -36,29 +48,150 @@
 
     h1 {
         text-align: center;
+        margin: 30px 0px;
     }
 
     #khu_vuc_cmt {
         margin-top: 30px;
     }
+
     div#cmt {
-    background-color: aliceblue;
-    text-align: center;
-    margin: 30px auto;
-    width: 40%;
-}
+        background-color: aliceblue;
+        text-align: center;
+        margin: 30px auto;
+        width: 40%;
+    }
+
+    p {
+        font-size: 25px;
+        text-indent: 50px;
+        margin-bottom: 30px;
+    }
+
+    #img_minh_hoa_no_OG {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #img_minh_hoa_no_OG img {
+        border-radius: 22px;
+    }
+
+    #img_minh_hoa_co_OG {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #img_minh_hoa_co_OG img {
+        border-radius: 22px;
+    }
+
+    #minh_hoa_trang_web_bao_mat {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #minh_hoa_trang_web_bao_mat img {
+        border-radius: 22px;
+    }
+
+    #no_preview_plugin_comment {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #no_preview_plugin_comment img {
+        border-radius: 22px;
+    }
+
+    #preview_plugin_comment {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #preview_plugin_comment img {
+        border-radius: 22px;
+    }
+
+    #favicon_website {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #favicon_website img {
+        border-radius: 22px;
+    }
+
+    #no_favicon_website {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #no_favicon_website img {
+        border-radius: 22px;
+    }
+
+    a {
+        text-decoration: none;
+        color: darkcyan;
+    }
 </style>
 
 <body>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=249038126685556&autoLogAppEvents=1" nonce="T2x2Dmw2"></script>    
-    
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0&appId=249038126685556&autoLogAppEvents=1"
+        nonce="T2x2Dmw2"></script>
+
     <h1>Hello World</h1>
+    <hr>
+    <h1>Quá trình tìm hiểu Comment Plugin Facebook</h1>
+    <p>Trong quá trình tìm hiểu Comment Plugin Facebook mình có tìm hiểu đến giao thức Open Gragh . Open Graph là giao
+        thức dùng để giao tiếp giữa Website với mạng xã hội Facebook.</p>
+    <p>Nếu không khai bao giao thức Open Gragh thì khi chúng ta gửi liên kết đến Website của chúng ta thì nó sẽ có hình
+        như bên dưới.</p>
+    <div id="img_minh_hoa_no_OG">
+        <img src="anh_minh_hoa_no_OG.png">
+    </div>
+    <p>Nếu có giao thức Open Gragh thì nó sẽ trông như này.</p>
+    <div id="img_minh_hoa_co_OG">
+        <img src="anh_minh_hoa_co_OG.png">
+    </div>
+    <p>Trong quá trình này mình cũng tìm hiểu về Favicon . Favicon là biểu tưởng của trang Web khi chúng ta vào một
+        trang Web bất kỳ , nó sẽ giống như thế này</p>
+    <div id="favicon_website">
+        <img src="favicon_website.png">
+    </div>
+    <p>Nếu không có logo Favicon nó trình dùng ảnh mặc định của trình duyệt và sẽ trông giống như thế này.</p>
+    <div id="no_favicon_website">
+        <img src="no_favicon_website.png">
+    </div>
+    <p>Giờ mình sẽ nói về quá trình tìm hiểu Comment Plugin . Mình dùng Hosting của Github thì thấy trên thanh địa chỉ
+        có ổ khóa thì nó là giao thức HTTPS được bảo mật</p>
+    <div id="minh_hoa_trang_web_bao_mat">
+        <img src="minh_hoa_trang_web_bao_mat.png">
+    </div>
+    <p>Nhưng khi thêm URL trang Web thì bản Preview của Facebook không hiểu thị</p>
+    <div id="no_preview_plugin_comment">
+        <img src="no_preview_plugin_comment.png">
+    </div>
+    <p>Nhưng khi gõ HTTP thì Facebook lại hiện preview . Vậy chứng tỏ thực chất trang Web dùng giao thức HTTP chứ không
+        phải HTTPS . Tại sao lại như vậy thì mình cũng chưa rõ.</p>
+    <div id="preview_plugin_comment">
+        <img src="preview_plugin_comment.png">
+    </div>
+    <p>Đây là vấn đề làm mình loay hoay mãi không thể thêm Plugin đến trang Web của mình , phải mất đến ngày rưỡi mới
+        thêm được Plugin . Thực sự thêm Plugin thì cũng bình thường không khó lắm, nhưng cái URL trang Web lại làm mình
+        mất rất nhiều thời gian . Bực quá đi mà lúc đó lại không nghĩ ra là HTTP chứ mới cay</p>
+    <p>Vậy đến đây là kết thúc quá trình tìm hiểu Plugin của mình . Mình đã học được cách thêm Plugin qua khóa học <a
+            href="">Git&github cho lập trình và thiết kế website</a> của anh <a
+            href="https://www.facebook.com/nddviet">Nguyễn Đức Việt</a> . Trong khóa học còn tìm hiểu sơ qua về Google Analytics để theo dõi lượt truy cập trang Web.</p>
     <hr>
     <h1 id="khu_vuc_cmt">Khu vực bình luận</h1>
     <div id="cmt">
         <div class="fb-comments" data-href="http://helloworlddc.github.io/" data-width="500" data-numposts="10"></div>
     </div>
+
 </body>
 
 </html>
